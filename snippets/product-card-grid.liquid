@@ -31,19 +31,29 @@
       <div class="grid-view-item__vendor">{{ product.vendor }}</div>
     {% endif %}
     
-<!--   TEST CODE NICK   -->
-    <div class="grid-view-item__test">
-<!--       {"stuff"}} -->
-    </div>
-    
-<!--   END TEST CODE   -->
+
     <!--   REVIEWS CODE   -->
     <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
     <!--   END REVIEWS CODE   -->
     
+
+
+    
+    <!--     PRODUCT CARD BUY BUTTON CODE     -->
+    <form method="post" action="/cart/add">
+ 			<input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+    	<input type="submit" value= "Get it: {{product.price | money}}" class="btn" />
+ 		</form>
+    <!--     END PRODUCT CARD BUY BUTTON CODE     -->
+    
+    
+<!--   ORIGINAL CODE (PRODUCT CARD BUY BUTTON)   -->
+    {% comment %}
     <div class="grid-view-item__meta">
       {% include 'product-price' %}
     </div>
-
-  </a>
+    {% endcomment %}
+<!--   END ORIG CODE (PRODUCT CARD BUY BUTTON)   -->
+    
+\  </a>
 </div>
