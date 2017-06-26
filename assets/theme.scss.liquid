@@ -2573,10 +2573,26 @@ hr {
 .grid-view-item__title {
   margin-bottom: 0;
   color: $color-text;
+  //TEST
+  text-transform: uppercase;
 
+  
   @if $font-bold-titles {
     font-weight: $font-weight-bold;
   }
+}
+
+// NEW NICK
+.grid-view-item__style {
+  margin-bottom: 9px;
+  margin-top: 0;
+  color: $color-body-text;
+  font-size: em($font-size-base - 2px);
+  
+  // TEST
+  font-style: italic;
+
+  
 }
 
 .grid-view-item__meta {
@@ -2607,8 +2623,11 @@ hr {
   margin-top: 4px;
   color: $color-body-text;
   font-size: em($font-size-base - 2px);
-  text-transform: uppercase;
-
+/*   text-transform: uppercase; */
+  
+ // TEST CODE NICK
+  margin-bottom: 0px;
+  
   @include media-query($small) {
     font-size: em($font-size-base - 3px);
   }
@@ -2692,7 +2711,7 @@ hr {
   color: $color-text;
   font-size: em($font-size-base + 2px);
   min-width: 100px;
-
+  
   @if $font-bold-titles {
     font-weight: $font-weight-bold;
   }

@@ -37,6 +37,11 @@
       <div class="grid-view-item__vendor">{{ product.vendor }}</div>
     {% endif %}
     
+    <!--     TEST CODE Beer Style     -->
+    {% assign parsed_description = product.description | split: '|' %}    
+    <div class="grid-view-item__style">{{ parsed_description | first | strip }}</div>
+<!--     END TEST CODE     -->
+    
 
 <!--   TEST CODE NICK   -->
     
@@ -51,7 +56,7 @@
     
 <!--   ORIGINAL CODE   -->
     {% comment %}
-    <div class="grid-view-item__meta">
+     <div class="grid-view-item__meta">
       {% include 'product-price' %}
     </div>
     {% endcomment %}
