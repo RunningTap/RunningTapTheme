@@ -27,17 +27,15 @@
     </noscript>
 
     <div class="h4 grid-view-item__title">{{ product.title }}</div>
+
+<!--   TEST CODE PRODUCT REVIEWS   -->
+    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+<!--  END TEST CODE  -->
+        
+    
     {% if section.settings.show_vendor %}
       <div class="grid-view-item__vendor">{{ product.vendor }}</div>
     {% endif %}
-    
-<!--   TEST CODE NICK   -->
-    <div class="grid-view-item__test">
-<!--       {"stuff"}} -->
-    </div>
-    
-<!--   END TEST CODE   -->
-    
     <div class="grid-view-item__meta">
       {% include 'product-price' %}
     </div>

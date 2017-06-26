@@ -2,7 +2,7 @@
   <meta itemprop="name" content="{{ product.title }}">
   <meta itemprop="url" content="{{ shop.url }}{{ product.url }}">
   <meta itemprop="image" content="{{ product.featured_image.src | img_url: '800x' }}">
-
+  
   {% comment %}
     Get first variant, or deep linked one
   {% endcomment %}
@@ -191,7 +191,9 @@
         <div class="product-single__description rte" itemprop="description">
           {{ product.description }}
         </div>
-
+        <!--   TEST CODE PRODUCT REVIEWS   -->
+		<div id="shopify-product-reviews" data-id="{{product.id}}">{{ product.metafields.spr.reviews }}</div>
+        <!--   END TEST CODE PRODUCT REVIEWS   -->
         {% if section.settings.show_share_buttons %}
           {% include 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product %}
         {% endif %}
