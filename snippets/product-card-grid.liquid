@@ -40,16 +40,20 @@
 
     
     <!--     PRODUCT CARD BUY BUTTON CODE     -->
-    <style> .emptySpace4px {
-      margin-bottom: 8px;
+  <style> .emptySpace4px {
+    margin-bottom: 8px;
     } </style>
 
     <div class="emptySpace4px"></div>
     
     <form method="post" action="/cart/add">
- 			<input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-    	<input type="submit" value= "Get it: {{product.price | money}}" class="btn" />
- 		</form>
+    <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+        {% if product.available %}
+            <input type="submit" value= "Get it: {{product.price | money}}" class="btn"/>
+        {% else %}
+            <input type="submit" value= "Sold out" class="btn" disabled="disabled"/>
+        {% endif %}
+  </form>
     <!--     END PRODUCT CARD BUY BUTTON CODE     -->
     
     
