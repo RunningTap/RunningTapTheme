@@ -27,6 +27,32 @@
     </noscript>
 
     <div class="h4 grid-view-item__title">{{ product.title }}</div>
+
+<!--   TEST CODE PRODUCT REVIEWS   -->
+	<style>
+    .spr-badge,
+	.spr-badge-starrating {
+  		color: {{ settings.product_reviews_star_color }};
+  		font-size: inherit - 2;
+        line-height: 0.5;
+        margin-bottom: 0;
+      	margin-top: 4px;
+        padding-top:0;
+        padding-bottom:0;
+    }
+  	.spr-badge-caption {
+  		font-size: 13px;
+        line-height: 0.5;
+        margin-bottom: 2px;
+      	margin-top: 0;
+        padding-top:0;
+        padding-bottom:0;
+	}
+  
+    </style>
+    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+<!--  END TEST CODE  -->
+        
     {% if section.settings.show_vendor %}
       <div class="grid-view-item__vendor">{{ product.vendor }}</div>
     {% endif %}
