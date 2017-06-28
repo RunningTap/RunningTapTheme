@@ -359,7 +359,7 @@ $color-pinterest: #cb2027;
 /*================ Sizing Variables ================*/
 $width-site: 1200px;
 $gutter-site: 55px;
-$gutter-site-mobile: 22px;
+$gutter-site-mobile: 10px;
 $section-spacing: 55px;
 $section-spacing-small: 35px;
 $border-radius: 2px;
@@ -1714,6 +1714,49 @@ a {
   }
 }
 
+.buybtn {
+  @include user-select();
+  @include prefix(appearance, none, webkit moz spec);
+  display: inline-block;
+  width: auto;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  padding: $input-padding-top-bottom-small $input-padding-left-right-small;
+  background-color: $color-btn-primary;
+  color: $color-btn-primary-text;
+  font-family: $font-stack-header;
+  font-weight: $font-weight-header;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: normal;
+  font-size: $font-size-base - 4;
+
+  @include media-query($medium-up) {
+    padding: $input-padding-top-bottom $input-padding-left-right;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: $opacity-link-hover;
+  }
+
+  .icon-arrow-right,
+  .icon-arrow-left {
+    height: 9px;
+  }
+
+  &[disabled] {
+    cursor: default;
+    opacity: 0.5;
+    background-color: $color-btn-primary;
+    color: $color-btn-primary-text;
+  }
+}
+
 .btn--secondary {
   background-color: $color-small-button;
   color: $color-small-button-text;
@@ -2573,10 +2616,19 @@ hr {
 .grid-view-item__title {
   margin-bottom: 0;
   color: $color-text;
+  text-transform: uppercase;
 
   @if $font-bold-titles {
     font-weight: $font-weight-bold;
   }
+}
+
+.grid-view-item__style {
+  margin-bottom: 9px;
+  margin-top: 0;
+  color: $color-body-text;
+  font-size: em($font-size-base - 2px);
+  font-style: italic; 
 }
 
 .grid-view-item__meta {
@@ -2607,7 +2659,8 @@ hr {
   margin-top: 4px;
   color: $color-body-text;
   font-size: em($font-size-base - 2px);
-  text-transform: uppercase;
+/*   text-transform: uppercase; */
+  margin-bottom: 0px;
 
   @include media-query($small) {
     font-size: em($font-size-base - 3px);
@@ -2631,7 +2684,7 @@ hr {
   }
 
   .grid-view-item--sold-out & {
-    opacity: 0.5;
+  //  opacity: 0.5;
   }
 
   &.lazyload {

@@ -27,19 +27,46 @@
     </noscript>
 
     <div class="h4 grid-view-item__title">{{ product.title }}</div>
+
+
+<!--   PRODUCT REVIEWS   -->
+	<style>
+    .spr-badge,
+	.spr-badge-starrating {
+  		color: {{ settings.product_reviews_star_color }};
+  		font-size: inherit - 2;
+        line-height: 0.5;
+        margin-bottom: 0;
+      	margin-top: 4px;
+        padding-top:0;
+        padding-bottom:0;
+    }
+  	.spr-badge-caption {
+  		font-size: 13px;
+        line-height: 0.5;
+        margin-bottom: 2px;
+      	margin-top: 0;
+        padding-top:0;
+        padding-bottom:0;
+	}
+  
+    </style>
+    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
+<!--  END PRODUCT REVIEWS CODE  -->
+        
+
     {% if section.settings.show_vendor %}
       <div class="grid-view-item__vendor">{{ product.vendor }}</div>
     {% endif %}
     
 
-    <!--   REVIEWS CODE   -->
-    <span class="shopify-product-reviews-badge" data-id="{{ product.id }}"></span>
-    <!--   END REVIEWS CODE   -->
-    
+<!--     TEST CODE Beer Style     -->
+    {% assign parsed_description = product.description | split: '|' %}    
+    <div class="grid-view-item__style">{{ parsed_description | first | strip }}</div>
+<!--     END TEST CODE     -->
 
 
-    
-    <!--     PRODUCT CARD BUY BUTTON CODE     -->
+<!--     PRODUCT CARD BUY BUTTON CODE     -->
   <style> .emptySpace4px {
     margin-bottom: 8px;
     } </style>
@@ -54,7 +81,7 @@
             <input type="submit" value= "Sold out" class="btn" disabled="disabled"/>
         {% endif %}
   </form>
-    <!--     END PRODUCT CARD BUY BUTTON CODE     -->
+<!--     END PRODUCT CARD BUY BUTTON CODE     -->
     
     
 <!--   ORIGINAL CODE (PRODUCT CARD BUY BUTTON)   -->
