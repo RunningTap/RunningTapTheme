@@ -55,7 +55,7 @@
 					"main_linklist": "main-menu",
 					"message": true,
 					"home_page_only": true,
-					"message_text": "Order now for free delivery!",
+					"message_text": "SUMMER SPECIAL: NOW DELIVERY-  $2 ONLY!",
 					"message_link": "shopify:\/\/collections\/all",
 					"color_bg": "#14213d",
 					"color_text": "#fca311"
@@ -64,10 +64,10 @@
 			"hero": {
 				"type": "hero",
 				"settings": {
-					"image": "shopify:\/\/shop_images\/Beer-Delivery-photo_45a98c10-7061-49cf-9a5e-bd13351e6b90.jpg",
+					"image": "shopify:\/\/shop_images\/Growler-Bag-Hero-Banner.png",
 					"alignment": "center",
-					"title": "DISCOVER AMAZING CRAFT BEERS",
-					"text": "<p>Fresh from local breweries.&nbsp;Delivered to your door.<\/p>",
+					"title": "BUY DIRECT FROM BREWERIES",
+					"text": "<p>Great local beers.&nbsp;Delivered to your door.<\/p>",
 					"hero_size": "large",
 					"text_size": "large",
 					"button_label": "beer me!",
@@ -225,18 +225,18 @@
 							"alignment": "center"
 						}
 					},
-					"1498001687389": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Lake_Monster_Logo.png",
-							"width": "33%",
-							"alignment": "center"
-						}
-					},
 					"1498001705046": {
 						"type": "image",
 						"settings": {
 							"image": "shopify:\/\/shop_images\/Northbound-Logo-v1_3ed565de-eba6-4315-9adf-336cad31393f.jpg",
+							"width": "33%",
+							"alignment": "center"
+						}
+					},
+					"1498001687389": {
+						"type": "image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Lake_Monster_Logo.png",
 							"width": "33%",
 							"alignment": "center"
 						}
