@@ -1216,10 +1216,18 @@ html {
 }
 
 .section-header {
+  margin-bottom: $section-spacing-small/2;
+
+  @include media-query($medium-up) {
+    margin-bottom: $section-spacing/3;
+  }
+}
+
+.logo-section-header {
   margin-bottom: $section-spacing-small;
 
   @include media-query($medium-up) {
-    margin-bottom: $section-spacing;
+  margin-bottom: $section-spacing-small/2;
   }
 }
 
@@ -5341,12 +5349,14 @@ $toolbar-height-small: 46px;
 
 .logo-bar {
   text-align: center;
-  margin-bottom: -$section-spacing-small;
+/*   margin-bottom: -$section-spacing-small; */
+  margin-bottom: -$section-spacing-small*2.5;
+
 }
 
 @include media-query($medium-up) {
   .logo-bar--large {
-    margin-bottom: -$section-spacing;
+    margin-bottom: -$section-spacing-small;
   }
 }
 

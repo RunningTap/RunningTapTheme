@@ -40,7 +40,9 @@
           {{ collection.description }}
         </div>
       {% endif %}
-    {% else %}
+    
+    {% comment %} Growler Menu Collection special display - MUST BE EXACT COLLECTION TITLE MATCH {% endcomment %}
+    {% elsif collection.title != "Growler Menu" %}
       <div class="page-width">
         <div class="section-header text-center">
           <h1>{{ collection.title }}</h1>
