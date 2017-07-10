@@ -2,7 +2,24 @@
   <header class="section-header text-center">
     <h1>{{ page_title }}</h1>
   </header>
-  
+
+{%comment%}
+Filter by tag code
+{%endcomment%}
+  <div class="clearfix filter">
+  <p>Browse by tag:</p>
+  <select class="coll-filter">
+    <option value="">All</option>
+    {% for tag in collection.all_tags %}
+    {% if current_tags contains tag %}
+    <option value="{{ tag | handle }}" selected>{{ tag }}</option>
+    {% else %}
+    <option value="{{ tag | handle }}">{{ tag }}</option>
+    {% endif %}
+    {% endfor %}
+  </select>
+</div>
+
   {%- assign blocks = section.blocks | sort: 'collection.all_products_count' -%}
   
   {% case section.settings.grid %}

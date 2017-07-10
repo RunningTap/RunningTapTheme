@@ -15,7 +15,7 @@
 		"image_overlay_opacity": "0.6",
 		"color_body_bg": "#ffffff",
 		"type_header_family": "Google_Open+Sans_700_sans",
-		"type_header_base_size": "26px",
+		"type_header_base_size": "28px",
 		"type_base_family": "Google_Open+Sans_400_sans",
 		"type_base_size": "18px",
 		"type_bold_product_titles": true,
@@ -131,8 +131,8 @@
 				"settings": {
 					"layout": "grid",
 					"grid": "4",
-					"rows": "5",
-					"show_collection_image": false,
+					"rows": "8",
+					"show_collection_image": true,
 					"show_vendor": true,
 					"sort_enable": false,
 					"tags_enable": false
@@ -168,8 +168,8 @@
 						"settings": {
 							"enable_image": true,
 							"image": "shopify:\/\/shop_images\/Beer-Icon_small_051fa780-3e90-4641-9944-0a0d3f490e6f.jpg",
-							"title": "No price mark-ups",
-							"text": "<p><em>Buying from us is no different than buying at the taproom. Menu prices include glass deposit.<\/em><\/p>",
+							"title": "Buy direct",
+							"text": "<p><em>Discover seasonal, limited beers, fresh from local brewers. Enjoy better value by cutting out the middle man.&nbsp;<\/em><\/p>",
 							"button_label": "",
 							"button_link": ""
 						}
@@ -180,7 +180,7 @@
 							"enable_image": true,
 							"image": "shopify:\/\/shop_images\/Growler-Icon_small_55008606-9100-4fe3-91fb-368750e2521d.jpg",
 							"title": "Growlers",
-							"text": "<p><em>All our beers are sold in 64oz growlers (~4 pints).<\/em> <em>If you already have a growler, we'll collect it on delivery and refund you the glass deposit.&nbsp;<\/em><\/p>",
+							"text": "<p><em>Our beers are sold in 64oz growlers (~4 pints).<\/em> <em>If you already have a growler, we'll collect it on delivery and refund you the glass deposit.&nbsp;<\/em><\/p>",
 							"button_label": "",
 							"button_link": ""
 						}
@@ -201,50 +201,6 @@
 				"settings": {
 					"title": "",
 					"align_text": "center"
-				}
-			},
-			"1497998917984": {
-				"type": "collection",
-				"settings": {
-					"title": "Growler Menu",
-					"collection": "all-products",
-					"grid": "4",
-					"rows": "1",
-					"show_vendor": true,
-					"show_view_all": true
-				}
-			},
-			"1492033924902": {
-				"type": "custom-content",
-				"blocks": {
-					"1498001672612": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Clockwerks-Logo-v1_87d4e275-a3d7-4c1a-aa2b-dffddc90438f.jpg",
-							"width": "33%",
-							"alignment": "center"
-						}
-					},
-					"1498001705046": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Northbound-Logo-v1_3ed565de-eba6-4315-9adf-336cad31393f.jpg",
-							"width": "33%",
-							"alignment": "center"
-						}
-					},
-					"1498001687389": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Lake_Monster_Logo.png",
-							"width": "33%",
-							"alignment": "center"
-						}
-					}
-				},
-				"block_order": ["1498001672612", "1498001705046", "1498001687389"],
-				"settings": {
-					"title": "Our brewery partners"
 				}
 			},
 			"1498001807256": {
@@ -274,6 +230,180 @@
 					"map_address": "Minneapolis, Minnesota",
 					"api_key": "AIzaSyCZ7qix5t58mjTAU-ntvFcn4YR284CqgbE",
 					"show_button": false
+				}
+			},
+			"list-collections-template": {
+				"type": "list-collections-template",
+				"blocks": {
+					"1498600183206": {
+						"type": "collection",
+						"settings": {
+							"collection": "balanced"
+						}
+					},
+					"1498600187254": {
+						"type": "collection",
+						"settings": {
+							"collection": "malt-forward"
+						}
+					},
+					"1498600193151": {
+						"type": "collection",
+						"settings": {
+							"collection": "hop-forward"
+						}
+					},
+					"1498600198135": {
+						"type": "collection",
+						"settings": {
+							"collection": "wild-sour"
+						}
+					},
+					"1498600205767": {
+						"type": "collection",
+						"settings": {
+							"collection": "dark-roasted"
+						}
+					}
+				},
+				"block_order": ["1498600183206", "1498600187254", "1498600193151", "1498600198135", "1498600205767"],
+				"settings": {
+					"display_type": "selected",
+					"sort": "alphabetical",
+					"grid": "3"
+				}
+			},
+			"logo-bar": {
+				"type": "logo-bar",
+				"blocks": {
+					"1499357518707": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Clockwerks-Logo-v1_ef037d71-dc8a-4e2d-8e0e-7de4a2bd1339.jpg",
+							"link": "shopify:\/\/collections\/clockwerks-brewing"
+						}
+					},
+					"1499357543926": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Northbound-Logo-v1_021cd41b-f30d-48d9-8d10-406af3f7c01f.jpg",
+							"link": "shopify:\/\/collections\/northbound-smokehouse-brewpub"
+						}
+					},
+					"1499357596991": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Lake_Monster_Logo_d08bc34c-aa70-43e0-93f2-1be032645f78.png",
+							"link": "shopify:\/\/collections\/lake-monster-brewing"
+						}
+					},
+					"1499557975681": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Town-Hall-Logo-v1_68313ef9-40cf-4556-94d8-8a8458be4320.png",
+							"link": ""
+						}
+					},
+					"1499558001923": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Black-Stack-Logo-v1_d270da23-a39c-4476-99ed-1797e7f0a6dc.png",
+							"link": ""
+						}
+					},
+					"1499558035921": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Day-Block-Logo-v1_08c88b40-2178-41fc-b66a-be08d109e681.png",
+							"link": ""
+						}
+					},
+					"1499558743146": {
+						"type": "logo_image",
+						"settings": {
+							"image": "shopify:\/\/shop_images\/Broken-Clock-Logo-v1.png",
+							"link": ""
+						}
+					}
+				},
+				"block_order": ["1499357518707", "1499357543926", "1499357596991", "1499557975681", "1499558001923", "1499558035921", "1499558743146"],
+				"settings": {
+					"title": "Growler Menu"
+				}
+			},
+			"1499527967240": {
+				"type": "collection",
+				"settings": {
+					"title": "Growler Menu",
+					"collection": "most-popular",
+					"grid": "4",
+					"rows": "1",
+					"show_vendor": true,
+					"show_view_all": true
+				}
+			},
+			"1499636967978": {
+				"type": "collection-list",
+				"blocks": {
+					"1499636967978-0": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "black-stack-brewing"
+						}
+					},
+					"1499636967978-1": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "clockwerks-brewing"
+						}
+					},
+					"1499636967978-2": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "headflyer"
+						}
+					},
+					"1499637033655": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "lake-monster-brewing"
+						}
+					},
+					"1499637034430": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "town-hall-brewery"
+						}
+					},
+					"1499637079623": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "day-block-brewing"
+						}
+					},
+					"1499637081466": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "northbound-smokehouse-brewpub"
+						}
+					},
+					"1499637082539": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "urban-growler-brewing"
+						}
+					},
+					"1499650487180": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "broken-clock"
+						}
+					}
+				},
+				"block_order": ["1499636967978-0", "1499636967978-1", "1499636967978-2", "1499637033655", "1499637034430", "1499637079623", "1499637081466", "1499637082539", "1499650487180"],
+				"settings": {
+					"title": "now delivering",
+					"grid": "5"
 				}
 			}
 		},
