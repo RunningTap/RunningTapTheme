@@ -39,7 +39,12 @@
       {% endif %}
     
     {% comment %} Growler Menu Collection special display - MUST BE EXACT COLLECTION TITLE MATCH {% endcomment %}
+    {% comment %}
+    COMMENTED OUT FOR THEME UPDATE 10th July 2017
     {% elsif collection.title != "Growler Menu" %}
+    {% endcomment %}
+    
+    {% else %}
       <div class="page-width">
         <div class="section-header text-center">
           <h1>{{ collection.title }}</h1>
