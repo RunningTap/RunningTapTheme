@@ -70,6 +70,11 @@
 <!-- Zapiet | Store Pickup + Delivery -->
 {% include 'storepickup' %}
 <!-- Zapiet | Store Pickup + Delivery -->
+
+  <!-- Product Review Override -->
+{{ "product-reviews-override.css" | asset_url | stylesheet_tag }}
+<!-- Product Review Override -->  
+  
 </head>
 
 <body class="template-{{ template | split: '.' | first }}">
