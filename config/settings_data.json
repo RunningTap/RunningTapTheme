@@ -30,7 +30,7 @@
 		"social_snapchat_link": "",
 		"social_youtube_link": "",
 		"social_vimeo_link": "",
-		"favicon": "shopify:\/\/shop_images\/RUNNING_TAP_LIGHT_BG_TAP.png",
+		"favicon": "shopify:\/\/shop_images\/logo_tap3.png",
 		"checkout_header_image": "",
 		"checkout_logo_image": "shopify:\/\/shop_images\/RUNNING_TAP_LIGHT_BG_NO_FRAME.png",
 		"checkout_logo_position": "left",
@@ -53,7 +53,7 @@
 					"logo": "shopify:\/\/shop_images\/2017-05-30_Running-Tap-Black-Logo-SMALL-OUT.png",
 					"logo_max_width": "135",
 					"main_linklist": "main-menu",
-					"message": true,
+					"message": false,
 					"home_page_only": true,
 					"message_text": "SUMMER SPECIAL: NOW DELIVERY-  $2 ONLY!",
 					"message_link": "shopify:\/\/collections\/all",
@@ -68,7 +68,7 @@
 					"alignment": "center",
 					"title": "BUY DIRECT FROM BREWERIES",
 					"text": "<p>Great local beers.&nbsp;Delivered to your door.<\/p>",
-					"hero_size": "large",
+					"hero_size": "medium",
 					"text_size": "large",
 					"button_label": "beer me!",
 					"button_link": "shopify:\/\/collections\/all-products"
@@ -132,7 +132,7 @@
 					"layout": "grid",
 					"grid": "4",
 					"rows": "5",
-					"show_collection_image": false,
+					"show_collection_image": true,
 					"show_vendor": true,
 					"sort_enable": false,
 					"tags_enable": false
@@ -180,7 +180,7 @@
 							"enable_image": true,
 							"image": "shopify:\/\/shop_images\/Growler-Icon_small_55008606-9100-4fe3-91fb-368750e2521d.jpg",
 							"title": "Growlers",
-							"text": "<p><em>Our beers are sold in 64oz growlers (~4 pints).<\/em> <em>If you already have a growler, we'll collect it on delivery and refund you the glass deposit.&nbsp;<\/em><\/p>",							"button_label": "",
+							"text": "<p><em>Our beers are sold in 64oz growlers (~4 pints).<\/em> <em>If you already have a growler, we'll collect it on delivery and refund you the glass deposit.&nbsp;<\/em><\/p>",
 							"button_label": "",
 							"button_link": ""
 						}
@@ -214,39 +214,6 @@
 					"show_view_all": true
 				}
 			},
-			"1492033924902": {
-				"type": "custom-content",
-				"blocks": {
-					"1498001672612": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Clockwerks-Logo-v1_87d4e275-a3d7-4c1a-aa2b-dffddc90438f.jpg",
-							"width": "33%",
-							"alignment": "center"
-						}
-					},
-					"1498001705046": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Northbound-Logo-v1_3ed565de-eba6-4315-9adf-336cad31393f.jpg",
-							"width": "33%",
-							"alignment": "center"
-						}
-					},
-					"1498001687389": {
-						"type": "image",
-						"settings": {
-							"image": "shopify:\/\/shop_images\/Lake_Monster_Logo.png",
-							"width": "33%",
-							"alignment": "center"
-						}
-					}
-				},
-				"block_order": ["1498001672612", "1498001705046", "1498001687389"],
-				"settings": {
-					"title": "Our brewery partners"
-				}
-			},
 			"1498001807256": {
 				"type": "custom-content",
 				"blocks": {
@@ -275,9 +242,61 @@
 					"api_key": "AIzaSyCZ7qix5t58mjTAU-ntvFcn4YR284CqgbE",
 					"show_button": false
 				}
+			},
+			"1500393454971": {
+				"type": "collection-list",
+				"blocks": {
+					"1500393454971-0": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "northbound-smokehouse"
+						}
+					},
+					"1500393454971-1": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "lake-monster-brewing"
+						}
+					},
+					"1500393454971-2": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "clockwerks-brewing"
+						}
+					},
+					"1500393500208": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "56-brewing"
+						}
+					},
+					"1500595710954": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "broken-clock"
+						}
+					},
+					"1500597165350": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "town-hall"
+						}
+					},
+					"1500597269157": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "day-block"
+						}
+					}
+				},
+				"block_order": ["1500393454971-0", "1500393454971-1", "1500393454971-2", "1500393500208", "1500595710954", "1500597165350", "1500597269157"],
+				"settings": {
+					"title": "now delivering",
+					"grid": "5"
+				}
 			}
 		},
-		"content_for_index": ["hero", "1497997181927", "1497998917984", "slideshow", "1492033924902", "1498007351947", "1498001807256"]
+		"content_for_index": ["hero", "1497997181927", "1497998917984", "slideshow", "1500393454971", "1498007351947", "1498001807256"]
 	},
 	"presets": {
 		"Default": {
