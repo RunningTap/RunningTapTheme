@@ -36,8 +36,7 @@
   {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
 {% endif %}
 
-<!--  TRIAL FOR COLLECTION AT END OF PAGE  -->
-
+<!--  COLLECTION AT END OF PAGE  -->
 {% if section.settings.show_collection %}
 {% if section.settings.title != blank %}
     <div class="section-header text-center">
@@ -46,7 +45,6 @@
 {% endif %}
 
 {%- assign collection = collections[section.settings.collection] -%}
-
 
   {% case section.settings.grid %}
     {% when '2' %}
@@ -100,8 +98,7 @@
     </div>
   {% endif %}
 {% endif %}
-
-<!-- END TRIAL -->
+<!-- END COLLECTION CODE -->
 
 {% schema %}
   {
