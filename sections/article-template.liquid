@@ -1,7 +1,7 @@
 <div class="section-header text-center">
   
-<!--  TITLE IMAGE CUSTOMIZATION  -->
-  {% if section.settings.blog_show_title_image and section.settings.title_image %}
+{% comment %}  TITLE IMAGE CUSTOMIZATION  {% endcomment %}  
+{% if section.settings.blog_show_title_image and section.settings.title_image %}
       <div class="collection-hero">
         <div class="collection-hero__image ratio-container lazyload js"
              data-bgset="{% include 'bgset', image: section.settings.title_image %}"
@@ -15,8 +15,8 @@
   {% else %}
   	<h1 class="article__title">{{ article.title }}</h1>
   {% endif %}
-<!-- END TITLE IMAGE CUSTOMIZATION -->
-  
+{% comment %}  END TITLE IMAGE CUSTOMIZATION  {% endcomment %}  
+
   {% if section.settings.blog_show_author %}
     <span class="article__author">{{ 'blogs.article.by_author' | t: author: article.author }}</span>
   {% endif %}
@@ -36,7 +36,7 @@
   {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
 {% endif %}
 
-<!--  COLLECTION AT END OF PAGE  -->
+{% comment %}  COLLECTION AT END OF PAGE  {% endcomment %}
 {% if section.settings.show_collection %}
 {% if section.settings.title != blank %}
     <div class="section-header text-center">
@@ -98,7 +98,7 @@
     </div>
   {% endif %}
 {% endif %}
-<!-- END COLLECTION CODE -->
+{% comment %} END COLLECTION CODE {% endcomment %}
 
 {% schema %}
   {
