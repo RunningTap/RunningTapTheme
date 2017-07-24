@@ -64,7 +64,7 @@
 			"hero": {
 				"type": "hero",
 				"settings": {
-					"image": "shopify:\/\/shop_images\/Growler-Bag-Hero-Banner.png",
+					"image": "shopify:\/\/shop_images\/Beer-Delivery-photo_1256c6f4-2a3f-4cee-89e0-ae945d4ddfe8.jpg",
 					"alignment": "center",
 					"title": "BUY DIRECT FROM BREWERIES",
 					"text": "<p>Great local beers.&nbsp;Delivered to your door.<\/p>",
@@ -149,9 +149,18 @@
 			"article-template": {
 				"type": "article-template",
 				"settings": {
+					"blog_show_title_image": false,
+					"title_image": "",
 					"blog_show_author": true,
 					"blog_show_date": true,
-					"show_share_buttons": true
+					"show_share_buttons": true,
+					"show_collection": false,
+					"title": "Featured collection",
+					"collection": "",
+					"grid": "3",
+					"rows": "2",
+					"show_vendor": false,
+					"show_view_all": false
 				}
 			},
 			"cart-template": {
@@ -287,9 +296,21 @@
 						"settings": {
 							"collection": "day-block"
 						}
+					},
+					"1500677119677": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "black-stack"
+						}
+					},
+					"1500677123067": {
+						"type": "featured_collection",
+						"settings": {
+							"collection": "tin-whiskers"
+						}
 					}
 				},
-				"block_order": ["1500393454971-0", "1500393454971-1", "1500393454971-2", "1500393500208", "1500595710954", "1500597165350", "1500597269157"],
+				"block_order": ["1500393454971-0", "1500393454971-1", "1500393454971-2", "1500393500208", "1500595710954", "1500597165350", "1500597269157", "1500677119677", "1500677123067"],
 				"settings": {
 					"title": "now delivering",
 					"grid": "5"
