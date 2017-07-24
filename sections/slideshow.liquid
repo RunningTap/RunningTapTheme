@@ -23,8 +23,11 @@
           {% endif %}
 
           <div class="slideshow__slide slideshow__slide--{{ block.id }}{% if is_background_video %} slideshow__slide--background-video{% endif %}" {{ block.shopify_attributes }}>
+<!--      LINK SETTINGS OVERRIDE       -->
             {% if block.settings.link != blank %}
-              <a href="{{ block.settings.link }}" class="slideshow__link">
+              {% unless block.settings.show_button %}
+              	<a href="{{ block.settings.link }}" class="slideshow__link">
+              {% endunless %}
             {% endif %}
 
             {% if block.type == 'video' %}
@@ -84,6 +87,13 @@
                       {{ block.settings.subheading | escape }}
                     </span>
                   {% endunless %}
+<!--         Button override           -->
+                  {% if block.settings.button_label != blank and block.settings.link != blank and block.settings.show_button %}
+        			<a href="{{ block.settings.link }}" class="btn hero__btn">
+          			{{ block.settings.button_label | escape }}
+        			</a>
+      			  {% endif %}
+                  
                   {% if block.type == 'video' %}
                     {% unless block.settings.video_type == 'background' %}
                       <div class="slideshow__video-control--play-wrapper{% if block.settings.title != blank or block.settings.subheading != blank %} slideshow__video-control--play-wrapper--push{% endif %}">
@@ -218,6 +228,18 @@
             "id": "subheading",
             "label": "Subheading",
             "default": "Tell your brand's story through video and images"
+          },
+          {
+            "type": "checkbox",
+            "id": "show_button",
+            "label": "Show a button for this slide",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button text",
+            "default": "Set the text for the button here"
           },
           {
             "type": "url",
